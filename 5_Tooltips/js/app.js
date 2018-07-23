@@ -12,8 +12,8 @@ document.addEventListener('DOMContentLoaded', function() {
         tool[i].addEventListener('mouseover', function () {
             console.log(this.dataset.text);
             var newspan =document.createElement('span');
-            newspan.classList.add('tooltipTezt');
-            newspan.innerText='Dawid jest spoko';
+            newspan.classList.add('tooltipText');
+            newspan.innerText=this.innerText;
             this.appendChild(newspan);
         })
         
